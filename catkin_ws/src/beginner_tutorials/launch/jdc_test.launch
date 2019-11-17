@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>	
+  <include file="$(find darknet_ros)/launch/yolov3_jdc_target.launch" />
+  <include file="$(find kinova_bringup)/launch/kinova_robot.launch" />
+ 
+  <include file="$(find j2n6s300_moveit_config)/launch/j2n6s300_demo.launch" />
+  <include file="$(find sia_bhand_controller)/launch/sia_bhand_controller.launch" />
+
+<include file="$(find serial)/launch/tactileSensor.launch" />
+<include file="$(find serial)/launch/suckerCom.launch" />
+</launch>
+

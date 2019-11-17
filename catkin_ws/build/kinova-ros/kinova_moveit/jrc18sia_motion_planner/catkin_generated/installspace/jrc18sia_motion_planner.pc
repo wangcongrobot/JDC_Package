@@ -1,0 +1,8 @@
+prefix=/home/robot/catkin_ws/install
+
+Name: jrc18sia_motion_planner
+Description: Description of jrc18sia_motion_planner
+Version: 0.6.3
+Cflags: -I/home/robot/catkin_ws/install/include
+Libs: -L/home/robot/catkin_ws/install/lib 
+Requires: moveit_core moveit_ros_planning_interface interactive_markers message_runtime

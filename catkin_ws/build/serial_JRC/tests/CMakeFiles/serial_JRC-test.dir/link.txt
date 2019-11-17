@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/serial_JRC-test.dir/unix_serial_tests.cc.o  -o /home/robot/catkin_ws/devel/lib/serial_JRC/serial_JRC-test  -L/home/robot/catkin_ws/build/gtest -rdynamic ../../gtest/libgtest.so /home/robot/catkin_ws/devel/lib/libserial_JRC.so -lutil -lpthread -lrt -lpthread -Wl,-rpath,/home/robot/catkin_ws/build/gtest:/home/robot/catkin_ws/devel/lib 

@@ -1,0 +1,8 @@
+prefix=/home/robot/catkin_ws/devel
+
+Name: kinect_detect
+Description: Description of kinect_detect
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/robot/catkin_ws/devel/lib 
+Requires: 

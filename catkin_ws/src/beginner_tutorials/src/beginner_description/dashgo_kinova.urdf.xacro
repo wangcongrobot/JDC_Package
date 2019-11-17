@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="dashgo_kinova"> 
+
+  <xacro:include filename="$(find dashgo_description)/urdf/dashgobase/dashgobase.xacro"/>
+  <xacro:include filename="$(find kinova_description)/urdf/j2n6a300_standalone.xacro"/>
+
+  <xacro:box_robot prefix="" joint_limited="true"/>
+  <link name="world"/>
+  
+  <joint name="world_to_dashgo" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint> 
+  <!--
+  <joint name="world_to_kinova" type="fixed">
+    <parent link="world"/>
+    <child link="root"/>
+    <origin xyz="0 0 ${base_length/2+0.1}" rpy="0 0 0"/>
+  </joint> 
+  -->
+  <joint name="world_to_footprint" type="fixed">
+    <parent link="world"/>
+    <child link="base_footprint"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint> 
+
+
+  <link name="kinova_base" >
+    <visual>
+       <origin xyz="0 0 0" rpy="0 0 0" />
+       <geometry>
+          <box size="0.04 0.04 0.05" />
+       </geometry>
+       <material name="grey"/>
+    </visual>    
+  </link>
+  <joint name="world_to_kinova_base" type="fixed">
+    <parent link="base_link"/>
+    <child link="kinova_base"/>
+    <origin xyz="0 0 ${base_length/2+0.1+0.025}" rpy="0 0 0"/>    
+  </joint>
+
+  <joint name="kinova_arm_to_base" type="fixed">
+    <parent link="kinova_base"/>
+    <child link="root"/>
+    <origin xyz="0 0 0.025" rpy="0 0 0"/>
+  </joint>
+
+</robot>
+  

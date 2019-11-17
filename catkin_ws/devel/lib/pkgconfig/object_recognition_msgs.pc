@@ -1,0 +1,8 @@
+prefix=/home/robot/catkin_ws/devel
+
+Name: object_recognition_msgs
+Description: Description of object_recognition_msgs
+Version: 0.4.1
+Cflags: -I/home/robot/catkin_ws/devel/include
+Libs: -L/home/robot/catkin_ws/devel/lib 
+Requires: actionlib_msgs geometry_msgs sensor_msgs shape_msgs std_msgs

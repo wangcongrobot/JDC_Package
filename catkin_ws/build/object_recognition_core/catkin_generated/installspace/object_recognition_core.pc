@@ -1,0 +1,8 @@
+prefix=/home/robot/catkin_ws/install
+
+Name: object_recognition_core
+Description: Description of object_recognition_core
+Version: 0.6.7
+Cflags: -I/home/robot/catkin_ws/install/include
+Libs: -L/home/robot/catkin_ws/install/lib -lobject_recognition_core_db -lobject_recognition_core_common
+Requires: sensor_msgs ecto

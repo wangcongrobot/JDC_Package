@@ -1,0 +1,45 @@
+calib_results:
+    name: external-calib-results.yaml
+
+subscribers:
+
+  color_reading:
+    
+    topic: /kinect2/qhd/image_color_rect
+  
+  depth_reading:
+    topic: /kinect2/qhd/image_depth_rect
+
+detect_paras:
+  
+  duration: 3.0
+  iou_thresh: 0.5
+
+workspace:
+  
+  low:
+    
+    xmin: 150.0
+    xmax: 400.0
+    ymin: -800.0
+    ymax: -400.0
+    zmin: 300.0
+    zmax: 450.0
+  
+  mid:
+
+    xmin: 150.0
+    xmax: 400.0
+    ymin: -800.0
+    ymax: -400.0
+    zmin: 600.0
+    zmax: 750.0
+
+  high:
+
+    xmin: 150.0
+    xmax: 400.0
+    ymin: -800.0
+    ymax: -400.0
+    zmin: 900.0
+    zmax: 1050.0

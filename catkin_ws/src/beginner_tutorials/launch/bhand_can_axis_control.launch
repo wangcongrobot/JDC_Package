@@ -1,0 +1,14 @@
+<launch>	
+	<node pkg="beginner_tutorials" type="bhand_axis_force_limit" name="bhand_axis_force" output="screen">
+	<param name="dev_name" type="string" value="/dev/pcanusb0" />
+	<param name="bhand_open_pos" type="int" value="6" />	
+	<param name="bhand_close_pos" type="int" value="14" />
+	<param name="force_display_on" type="bool" value="false" />
+	<param name="force_threshold" type="double" value="18.0" />
+	<param name="torque_threshold" type="double" value="20.0" />
+	<param name="force_danger" type="double" value="25.0" />
+	<param name="torque_danger" type="double" value="40.0" />
+	<param name="left_torque_x_threshold"  type="double" value="-2.0" />
+	<param name="right_torque_x_threshold" type="double" value="2.0" />
+	</node>	
+</launch>

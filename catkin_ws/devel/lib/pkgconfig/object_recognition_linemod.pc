@@ -1,0 +1,8 @@
+prefix=/home/robot/catkin_ws/devel
+
+Name: object_recognition_linemod
+Description: Description of object_recognition_linemod
+Version: 0.3.7
+Cflags: 
+Libs: -L/home/robot/catkin_ws/devel/lib 
+Requires: ecto object_recognition_core object_recognition_renderer opencv_candidate

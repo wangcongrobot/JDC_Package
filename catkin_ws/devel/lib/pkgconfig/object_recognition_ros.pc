@@ -1,0 +1,8 @@
+prefix=/home/robot/catkin_ws/devel
+
+Name: object_recognition_ros
+Description: Description of object_recognition_ros
+Version: 0.3.7
+Cflags: -I/home/robot/catkin_ws/src/object_recognition_ros/include
+Libs: -L/home/robot/catkin_ws/devel/lib -lobject_information_cache
+Requires: object_recognition_core object_recognition_msgs

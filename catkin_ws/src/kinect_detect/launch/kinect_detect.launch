@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+
+  <include file="$(find kinect2_bridge)/launch/kinect2_bridge.launch" />
+
+  <include file="$(rospack find darknet_ros)"/launch/yolov3_jdc.launch" />
+
+  <arg name="calib_path"         default="$(find kinect_detect)/calib"
+
+  <rosparam command="load" file="$(find kinect_detect)/config/parameters.yaml" />
+
+  <node pkg="kinect_detect" type="detect_fuser" name="detect_fuser" >
+    <param name="calib_path"     value="${arg calib_path)" />
+  </node>
+
+</launch>

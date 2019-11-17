@@ -1,0 +1,8 @@
+prefix=/home/robot/catkin_ws/devel
+
+Name: eye2hand_calib
+Description: Description of eye2hand_calib
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/robot/catkin_ws/devel/lib 
+Requires: 

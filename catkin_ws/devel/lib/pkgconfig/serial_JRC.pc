@@ -1,0 +1,8 @@
+prefix=/home/robot/catkin_ws/devel
+
+Name: serial_JRC
+Description: Description of serial_JRC
+Version: 1.2.1
+Cflags: -I/home/robot/catkin_ws/src/serial_JRC/include
+Libs: -L/home/robot/catkin_ws/devel/lib 
+Requires: roscpp std_msgs

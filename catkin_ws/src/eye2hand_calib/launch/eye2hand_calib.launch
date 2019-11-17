@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+
+  <!-- Launch kinectv2 -->
+  <include file="$(find kinect2_bridge)/launch/kinect2_bridge.launch" />
+  
+  <!-- Kinect2 intrinsic parameters matrix -->
+  <rosparam command="load" ns="calib" file="$(find eye2hand_calib)/config/kinect2.yaml" />
+
+  <!-- calibration node, the args is the topic of hand position --> 
+  <node pkg="eye2hand_calib" type="calib" name="eye2hand_calib" args="/ee_pos" output="screen" /> 
+
+  <!-- hand position node -->
+  <node pkg="robot_tf_setup" type="ee_pos_pub" name="ee_pos_pub"/>
+
+</launch>

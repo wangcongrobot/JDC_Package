@@ -1,0 +1,8 @@
+prefix=/home/robot/catkin_ws/install
+
+Name: moveit_visual_tools
+Description: Description of moveit_visual_tools
+Version: 3.0.5
+Cflags: -I/home/robot/catkin_ws/install/include
+Libs: -L/home/robot/catkin_ws/install/lib -lmoveit_visual_tools
+Requires: rviz_visual_tools moveit_ros_robot_interaction moveit_core geometry_msgs visualization_msgs graph_msgs std_msgs moveit_msgs trajectory_msgs

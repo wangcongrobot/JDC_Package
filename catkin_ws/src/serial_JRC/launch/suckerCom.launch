@@ -1,0 +1,5 @@
+<launch>	
+	<node pkg="serial" type="serial_sucker" name="serial_sucker" output="screen">
+	<param name="dev_name" type="string" value="/dev/ttyUSB0" />
+	</node>		
+</launch>

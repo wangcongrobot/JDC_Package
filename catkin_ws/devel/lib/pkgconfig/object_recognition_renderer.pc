@@ -1,0 +1,8 @@
+prefix=/home/robot/catkin_ws/devel
+
+Name: object_recognition_renderer
+Description: Description of object_recognition_renderer
+Version: 0.2.2
+Cflags: -I/home/robot/catkin_ws/src/ork_renderer/include -I/usr/include
+Libs: -L/home/robot/catkin_ws/devel/lib -lobject_recognition_renderer_2d -lobject_recognition_renderer_3d -l:/usr/lib/x86_64-linux-gnu/libglut.so -l:/usr/lib/x86_64-linux-gnu/libXmu.so -l:/usr/lib/x86_64-linux-gnu/libXi.so
+Requires: 

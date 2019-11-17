@@ -1,0 +1,8 @@
+prefix=/home/robot/catkin_ws/install
+
+Name: bhand_controller
+Description: Description of bhand_controller
+Version: 0.1.1
+Cflags: -I/home/robot/catkin_ws/install/include
+Libs: -L/home/robot/catkin_ws/install/lib 
+Requires: 

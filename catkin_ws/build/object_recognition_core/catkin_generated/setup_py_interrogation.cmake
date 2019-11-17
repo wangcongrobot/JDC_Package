@@ -1,0 +1,6 @@
+set(object_recognition_core_SETUP_PY_VERSION "0.6.7")
+set(object_recognition_core_SETUP_PY_SCRIPTS "apps/detection;apps/training;apps/dbscripts/copy_db.py;apps/dbscripts/mesh_add.py;apps/dbscripts/object_add.py;apps/dbscripts/object_delete.py;apps/dbscripts/object_search.py")
+set(object_recognition_core_SETUP_PY_PACKAGES "object_recognition_core;couchdb")
+set(object_recognition_core_SETUP_PY_PACKAGE_DIRS "python/object_recognition_core;python/couchdb")
+set(object_recognition_core_SETUP_PY_MODULES "")
+set(object_recognition_core_SETUP_PY_MODULE_DIRS "")

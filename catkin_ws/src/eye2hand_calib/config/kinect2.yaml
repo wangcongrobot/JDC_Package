@@ -1,0 +1,17 @@
+parameters:
+
+  # my kinect
+  kinect2: 
+    scale: 1000.0
+    cx: 488.091451
+    cy: 271.228844
+    fx: 539.968036
+    fy: 543.494867
+
+  # hk's kinect
+  # kinect2: 
+  #   scale: 1000.0
+  #   cx: 461.185699
+  #   cy: 278.003533
+  #   fx: 505.565471
+  #   fy: 506.534290
